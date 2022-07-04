@@ -1,27 +1,30 @@
-# RandomGymAngular
+# Random Gym
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+El sitio de ejercicios aleatorios por excelencia
 
-## Development server
+Instrucciones de uso:
+- Instalar Visual Studio Code, NodeJS y Git
+- Con Git, clonar este repositorio en una carpeta
+- Abrir la carpeta padre donde se encuentran las carpetas "frontend" y "backend" con Visual Studio Code
+- Abrir una terminal y poner 'cd frontend' y 'npm install' para crear carpeta node_modules
+- Instalar módulos necesarios (Se detallan más abajo) con comandos npm
+- Poner 'ng serve' y dejar la terminal abierta
+- Abrir nueva terminal, poner 'cd backend', 'npm install' y por último 'tsc --watch', dejar segunda terminal abierta
+- Abrir última terminal, poner 'cd backend', 'npm start' y dejar terminal abierta
+- Con las tres terminales abiertas, en el navegador ir a "localhost:4200" o el puerto configurado de preferencia
+- Navegar por RandomGym
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Módulos NodeJS necesarios:
+- @angular/cli@14.0.0
+- npm@8.12.1
+- typescript@4.6.4
+- typings@2.1.1
 
-## Code scaffolding
+Para entrar al panel de administrador iniciar sesión con las siguientes credenciales:
+- Nombre de usuario: nsfwteam
+- Contraseña: 123
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Integrantes:
+- Angel Morales Morgado
+- Axel Neumann González
+- Francisco Leiva Camus
