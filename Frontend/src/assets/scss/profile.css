@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@1,600&display=swap");
+article {
+  background-color: transparent;
+  background-image: url("../imagenes/rockbg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Bebas Neue", cursive;
+}
+
+hr {
+  border-color: #ff0000;
+  height: 10px;
+  background-color: #ff0000;
+}
+
+header {
+  background-color: #550000;
+}
+
+.profile-pic {
+  width: 20vh;
+  border-radius: 50%;
+  background: #fff;
+  padding: 4px;
+  margin: 4vh;
+  max-width: 200px;
+  min-width: 200px;
+  width: 200px;
+  height: 200px;
+  min-height: 200px;
+  max-height: 200px;
+  z-index: 2;
+}
+
+.profile-pic:hover {
+  opacity: 0.5;
+}
+
+#informacion {
+  color: #F9F3EE;
+  font-family: "Bebas Neue", cursive;
+}
+
+.profile-box {
+  background-color: #000000;
+  text-align: center;
+  padding: 20vh 100px;
+  color: #F9F3EE;
+  position: relative;
+  border-radius: 20px;
+}
+
+.panel {
+  border: 2px solid #550000;
+  background-image: url("/assets/imagenes/redpattern.jpg");
+  width: 70%;
+}
+
+#pen_icon {
+  position: absolute;
+  left: 49%;
+  top: 23%;
+  z-index: 1;
+}
+/*# sourceMappingURL=profile.css.map */

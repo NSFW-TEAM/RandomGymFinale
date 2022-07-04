@@ -1,0 +1,95 @@
+<section>
+<br/>
+        <h1 id="titulo">GENERADOR DE EJERCICIOS ALEATORIOS RANDOM GYM®</h1>
+        <form [formGroup]="formRandomExe" (submit)="GenerateExercise()">
+            <h1 class="pregunta">¿Qué dificultad deseas?</h1>
+            <div class="d-flex justify-content-center">
+
+                <div class="btn-group btn-group-lg" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradiodif" id="btnradiodif1"  value="easy" formControlName="dificultad" >
+                    <label class="btn btn-outline-danger" for="btnradiodif1">Facil</label>
+
+                    <input type="radio" class="btn-check" name="btnradiodif" id="btnradiodif2"  value="medium" formControlName="dificultad" >
+                    <label class="btn btn-outline-danger" for="btnradiodif2">Medio</label>
+
+                    <input type="radio" class="btn-check" name="btnradiodif" id="btnradiodif3"  value="hard" formControlName="dificultad" >
+                    <label class="btn btn-outline-danger" for="btnradiodif3">Dificil</label>
+
+                    <input type="radio" class="btn-check" name="btnradiodif" id="btnradiodif4"  value="veryhard" formControlName="dificultad" >
+                    <label class="btn btn-outline-danger" for="btnradiodif4">Espartano</label>
+
+                </div>
+            </div>
+            <br/><br/>
+            <h1 class="pregunta">¿Qué quieres trabajar?</h1>
+            <div class="d-flex justify-content-center">
+                <div class="d-inline btn-group btn-group-lg" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1"  value="upper" formControlName="area" >
+                    <label class="btn btn-outline-danger" for="btnradio1">Superior</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2"  value="lower" formControlName="area" >
+                    <label class="btn btn-outline-danger" for="btnradio2">Inferior</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3"  value="cardio" formControlName="area" >
+                    <label class="btn btn-outline-danger" for="btnradio3">Cardio</label>
+                  
+                    
+                </div>
+            </div>
+            <br/>
+            <br/><br/><br/>
+            <div class="d-flex justify-content-center">
+
+                <button type="button submit" class="btn btn-dark btn-lg" id="genexe">Dame mi ejercicio</button>
+
+            </div>
+        </form>
+
+        <br/><br/>
+
+        <div class="contenedor" hidden>
+            <h1 class="pregunta">Este es tu ejercicio:</h1>
+            <img class="imgexe img-fluid" src="/assets/imagenes/ejercicios/placeholder.gif" style="max-height: 750px; max-width: 1100px;">
+            <h1 id="nameexe">PLACEHOLDER NAME</h1>
+            
+            <div class="container accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item bg-dark">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        Explicación
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body explicacion ">
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg-dark">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                        Duración
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body duracion">
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg-dark">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
+                        Zona Trabajada
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
+                    <div class="accordion-body workarea">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <br/>
+    </section>

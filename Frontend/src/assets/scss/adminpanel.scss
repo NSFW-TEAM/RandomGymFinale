@@ -1,0 +1,29 @@
+@import "variables";
+
+section{
+    background: {
+        image: url('../imagenes/rockbg.jpg');
+        position: center;
+        size: cover;
+        repeat: no-repeat;
+    }
+    font-family: $bigfont;
+}
+
+.titular{
+    font-size: 2em;
+    padding-top: 1%;
+}
+
+input{
+    font-family: $smallfont;
+    text-align: center;
+}
+
+.panel{
+    border: 2px solid $verydarkred;
+    background: {
+        image: url("/assets/imagenes/redpattern.jpg");
+    }
+    width: 70%;
+}

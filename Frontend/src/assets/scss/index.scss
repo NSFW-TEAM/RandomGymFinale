@@ -1,0 +1,28 @@
+@import "variables";
+
+section{
+    background: {
+        image: url('../imagenes/rockbg.jpg');
+        position: center;
+        size: cover;
+        repeat: no-repeat;
+    }
+    font-family: $bigfont;
+}
+
+.titulo{
+    color: $colorBlancoPastel;
+    font-family: $bigfont;
+    -webkit-text-stroke: 2px $colorNegro;
+}
+.parrafos{
+    color: $colorBlancoPastel;
+    font-family: $bigfont;
+    font-size: 1.5em;
+    padding: 0%;
+}
+/*
+#textoinicial{
+    width: 50%;
+}
+*/

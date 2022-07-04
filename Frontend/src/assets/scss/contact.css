@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@1,600&display=swap");
+.titulo {
+  color: white;
+}
+
+section {
+  background-color: transparent;
+  background-image: url("/assets/imagenes/rockbg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Bebas Neue", cursive;
+}
+/*# sourceMappingURL=contact.css.map */

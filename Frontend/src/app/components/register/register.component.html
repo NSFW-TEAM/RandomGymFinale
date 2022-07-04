@@ -1,0 +1,114 @@
+<section>
+    <div class="container">
+        <div class="d-flex justify-content-center p-5">
+            <div class="card bg-dark pt-5 pb-5" style="width: 40rem; min-width: 310px">
+                <div class="card-body d-inline ">
+                    <form [formGroup]="formRegister" (submit)="procesar()" >
+                        <h1  class="d-flex justify-content-center" id="titulos">Registro</h1>
+                        <br>
+
+                        <h5 class="card-title d-flex justify-content-center">Nombre de usuario</h5>
+                        <input type="text" class="form-control" style="min-width:16rem;" placeholder="Nombre de usuario" id="username" formControlName="username" >
+                        
+                        <br>
+                        
+                        <h5 class="card-title d-flex justify-content-center">Correo electronico</h5>
+                        <input type="text" class="form-control" style="min-width:16rem;" placeholder="user@example.com" id="email" formControlName="email" >
+                        
+                        <br>
+                        
+                        <h5 class="card-title d-flex justify-content-center">Contraseña</h5>
+                        <input type="password" class="form-control" style="min-width:16rem;" placeholder="Contraseña" id="password1" formControlName="password1" >
+                        
+                        <br>
+                        
+                        <h5 class="card-title d-flex justify-content-center">Repita su contraseña</h5>
+                        <input type="password" class="form-control" style="min-width:16rem;" placeholder="Contraseña" id="password2" formControlName="password2" >
+                        
+                        <br>
+
+                        <h5 class="card-title d-flex justify-content-center">Sexo</h5>
+                        <div class="d-flex justify-content-center btn-group btn-group-md" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradiosex" id="btnradiosex1"  value="Masculino" formControlName="sex" >
+                            <label class="btn btn-outline-danger" for="btnradiosex1">masculino</label>
+                            <input type="radio" class="btn-check" name="btnradiosex" id="btnradiosex2"  value="Femenino" formControlName="sex" >
+                            <label class="btn btn-outline-danger" for="btnradiosex2">femenino</label>
+                        </div>
+                        
+                        <br>
+
+                        <h5 class="card-title d-flex justify-content-center">Objetivo</h5>
+                        <div class="d-flex justify-content-center btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradioobj" id="btnradioobj1"  value="Perder peso" formControlName="obj" >
+                            <label class="btn btn-outline-danger" for="btnradioobj1">Perder peso</label>
+                            <input type="radio" class="btn-check" name="btnradioobj" id="btnradioobj2"  value="Ganar masa" formControlName="obj" >
+                            <label class="btn btn-outline-danger" for="btnradioobj2">Ganar masa</label>
+                            <input type="radio" class="btn-check" name="btnradioobj" id="btnradioobj3"  value="Equilibrio" formControlName="obj" >
+                            <label class="btn btn-outline-danger" for="btnradioobj3">Mantención</label>
+                            <input type="radio" class="btn-check" name="btnradioobj" id="btnradioobj4"  value="Tonificación" formControlName="obj" >
+                            <label class="btn btn-outline-danger" for="btnradioobj4">Tonificación</label>
+                        </div>
+                        
+                        <br>
+
+                        <h5 class="card-title d-flex justify-content-center">Enfoque de Entrenamiento</h5>
+                        <div class="d-flex justify-content-center btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradioarea" id="btnradioarea1"  value="Tren superior" formControlName="area" >
+                            <label class="btn btn-outline-danger" for="btnradioarea1">tren superior</label>
+                            <input type="radio" class="btn-check" name="btnradioarea" id="btnradioarea2"  value="Tren inferior" formControlName="area" >
+                            <label class="btn btn-outline-danger" for="btnradioarea2">tren inferior</label>
+                            <input type="radio" class="btn-check" name="btnradioarea" id="btnradioarea3"  value="Cardiovascular" formControlName="area" >
+                            <label class="btn btn-outline-danger" for="btnradioarea3">Cardiovascular</label>
+                        </div>
+
+                        <br>
+                        
+                        <h5 class="card-title d-flex justify-content-center">Nivel de experiencia</h5>
+                        <div class="d-flex justify-content-center btn-group btn-group-sm btn-group-md" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradiodiff" id="btnradiodiff1"  value="Principiante" formControlName="diff" >
+                            <label class="btn btn-outline-danger" for="btnradiodiff1">principiante</label>
+                            <input type="radio" class="btn-check" name="btnradiodiff" id="btnradiodiff2"  value="Intermedio" formControlName="diff" >
+                            <label class="btn btn-outline-danger" for="btnradiodiff2">intermedio</label>
+                            <input type="radio" class="btn-check" name="btnradiodiff" id="btnradiodiff3"  value="Avanzado" formControlName="diff" >
+                            <label class="btn btn-outline-danger" for="btnradiodiff3">avanzado</label>
+                            <input type="radio" class="btn-check" name="btnradiodiff" id="btnradiodiff4"  value="Espartano" formControlName="diff" >
+                            <label class="btn btn-outline-danger" for="btnradiodiff4">espartano</label>
+                        </div>
+                        
+                        <br>
+
+                        <h5 class="card-title d-flex justify-content-center">Uso de equipo</h5>
+                        <div class="d-flex  btn-group btn-group-lg" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradioequip" id="btnradioequip1"  value="Con equipo" formControlName="equip" >
+                            <label class="btn btn-outline-danger" for="btnradioequip1">con equipo</label>
+                            <input type="radio" class="btn-check" name="btnradioequip" id="btnradioequip2"  value="Sin equipo" formControlName="equip" >
+                            <label class="btn btn-outline-danger" for="btnradioequip2">sin equipo</label>
+                        </div>
+
+                        <br>
+                        
+                        <h5 class="card-title d-flex justify-content-center">Peso</h5>
+                        <input type="number" class="form-control" style="min-width:16rem;" placeholder="Peso en KG" id="peso" formControlName="peso">
+                        
+                        <br>
+                        
+                        <h5 class="card-title d-flex justify-content-center">Altura</h5>
+                        <input type="number" class="form-control" style="min-width:16rem;" placeholder="Altura en CM" id="altura" formControlName="altura">
+                        
+                        <br>
+                        
+                        <div class="d-flex justify-content-center" *ngIf="!captcha">
+                            <re-captcha (resolved)="resolved($event)" siteKey="6Lcth68gAAAAAOWZlz9GgDul6rFotaycAspyHA-s"></re-captcha>
+                        </div>
+                          <br>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-danger btn-lg" id="register" disabled [disabled]="formRegister.invalid || !captcha">Registrarse</button>
+                        </div>
+                        <br><br>
+                        <p id="status" hidden>placeholder</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@1,600&display=swap");
+section {
+  background-image: url("../imagenes/rockbg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Bebas Neue", cursive;
+}
+
+.titular {
+  font-size: 2em;
+  padding-top: 1%;
+}
+
+input {
+  font-family: "Anybody", cursive;
+  text-align: center;
+}
+
+.panel {
+  border: 2px solid #550000;
+  background-image: url("/assets/imagenes/redpattern.jpg");
+  width: 70%;
+}
+/*# sourceMappingURL=adminpanel.css.map */

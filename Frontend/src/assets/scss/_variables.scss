@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@1,600&display=swap');
+
+$bgcolorpage: #141414;
+$bigfont: 'Bebas Neue', cursive;
+$smallfont: 'Anybody', cursive;
+$colorRojo: #ff0000;
+$colorNegro: #000000;
+$colorBlanco: #ffffff;
+$colorGris: #414141;
+$colorBlancoPastel: #F9F3EE;
+$verydarkred: #550000;
+$verydarkgrey: #363636;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);

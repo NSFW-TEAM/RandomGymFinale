@@ -1,0 +1,39 @@
+@import "variables";
+@import "botones";
+
+section{
+    background: {
+        color: transparent;
+        image: url("/assets/imagenes/mazado.jpg");
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+    }
+    font-family: $bigfont;
+    padding: 5% 10%;
+}
+
+input{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-family: $smallfont;
+}
+
+#titulos{
+    font-family: $bigfont;
+    color: $colorRojo;
+    font-style: oblique;
+}
+
+
+label{
+    color:white;
+}
+
+#status{
+    text-align: center;
+    font-size: 1.7em;
+    font-family: $smallfont;
+}

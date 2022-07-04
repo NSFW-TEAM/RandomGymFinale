@@ -1,0 +1,16 @@
+@import 'variables';
+
+.titulo{
+    color: white;
+}
+
+section{
+    background: {
+        color: transparent;
+        image: url('/assets/imagenes/rockbg.jpg');
+        position: center;
+        size: cover;
+        repeat: no-repeat;
+    }
+    font-family: $bigfont;
+}

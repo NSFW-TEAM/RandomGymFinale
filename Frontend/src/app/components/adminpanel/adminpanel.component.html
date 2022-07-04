@@ -1,0 +1,105 @@
+<section>
+    <p class="text-center titular">Bienvenid@ al panel de administrador</p>
+    <div class="container-fluid">
+        <a class="nav-link text-center">
+            <button class="btn btn-success me-lg-2 btn-lg" type="button" (click)="AdminTool('addexe')">Agregar ejercicio</button>
+        </a>
+        <div class="container-fluid panel text-center" style="margin-top: 1%; min-width: 300px" id="addexe" hidden>
+            <br/>
+            <p class="titular">ingresa los datos del ejercicio:</p>
+            <form [formGroup]="formAddExe" (submit)="AddExe()">
+                <label for="addexename">Nombre (Max. 50 caracteres)</label>
+                <br>
+                <input type="text" id="addexename" placeholder="El agarre del mono" style="width: 85%;" maxlength="50" formControlName="addexename"/>
+                <br><br>
+                <label for="addexedesc">Descripción (Max. 150 caracteres)</label>
+                <br>
+                <input type="textarea" placeholder="Para realizar este ejercicio debes..." style="width: 85%;" maxlength="150" id="addexedesc" formControlName="addexedesc"/>
+                <br><br>
+                <label for="addexedur">Duración en series y repeticiones (Max. 50 caracteres)</label>
+                <br>
+                <input type="text" id="addexedur" placeholder="X series de X repeticiones" style="width: 85%;" maxlength="50" formControlName="addexedur"/>
+                <br><br>
+                <label for="addexeworkarea">Area trabajada (Max. 50 caracteres)</label>
+                <br>
+                <input type="text" id="addexeworkarea" placeholder="Los músculos trabajados son..." style="width: 85%;" maxlength="50" formControlName="addexeworkarea"/>
+                <br><br>
+                <label for="addexefile">imagen (url)</label>
+                <br>
+                <input type="text" id="addexefile" placeholder="http://www.com/agarre_mono.gif" style="width: 85%" maxlength="500" formControlName="addexefile"/>
+                <br><br>
+                <label for="addexediff">Dificultad</label>
+                <br>
+                <div class="d-flex justify-content-center">
+                    <div display="inline" class="btn-group btn-group-md" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradiodif" id="btnradiodif1"  value="easy" formControlName="addexediff" >
+                        <label class="btn btn-outline-danger" for="btnradiodif1">Facil</label>
+    
+                        <input type="radio" class="btn-check" name="btnradiodif" id="btnradiodif2"  value="medium" formControlName="addexediff" >
+                        <label class="btn btn-outline-danger" for="btnradiodif2">Medio</label>
+    
+                        <input type="radio" class="btn-check" name="btnradiodif" id="btnradiodif3"  value="hard" formControlName="addexediff" >
+                        <label class="btn btn-outline-danger" for="btnradiodif3">Dificil</label>
+    
+                        <input type="radio" class="btn-check" name="btnradiodif" id="btnradiodif4"  value="veryhard" formControlName="addexediff" >
+                        <label class="btn btn-outline-danger" for="btnradiodif4">Espartano</label>
+                    </div>
+                </div>
+                <br><br>
+                <label for="addexearea">Zona trabajada</label>
+                <br>
+                <div class="d-flex justify-content-center">
+                    <div class="d-inline btn-group btn-group-md" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1"  value="upper" formControlName="addexearea" >
+                        <label class="btn btn-outline-danger" for="btnradio1">Superior</label>
+    
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2"  value="lower" formControlName="addexearea" >
+                        <label class="btn btn-outline-danger" for="btnradio2">Inferior</label>
+    
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3"  value="cardio" formControlName="addexearea" >
+                        <label class="btn btn-outline-danger" for="btnradio3">Cardio</label>
+                    </div>
+                </div>
+                <br><br>
+                <input class="btn btn-success me-lg-2" type="submit" value="Agregar" id="addexesubmit" disabled [disabled]="formAddExe.invalid"/>
+                <br><br>
+                <p style="font-size: 1.2em;" id="resultadoadd"></p>
+            </form>
+        </div>
+        <br/>
+        <a class="nav-link text-center">
+            <button class="btn btn-danger me-lg-2 btn-lg" type="button" (click)="AdminTool('delexe')">Eliminar ejercicio</button>
+        </a>
+        <div class="container-fluid panel text-center" style="margin-top: 1%; min-width: 300px" id="delexe" hidden>
+            <br/>
+            <p class="titular">ingresa el id del ejercicio a eliminar:</p>
+            <form [formGroup]="formDelExe" (submit)="DelExe()">
+                <label for="delexeid">ID del ejercicio</label>
+                <br>
+                <input type="number" min="0" max="99" id="delexeid" style="width: 50px;" formControlName="delexeid"/>
+                <br><br><br>
+                <input type="submit" class="btn btn-danger" value="Eliminar" id="delexesubmit" disabled [disabled]="formDelExe.invalid"/>
+            </form>
+            <br><br>
+            <p style="font-size: 1.2em;" id="resultadodel"></p>
+        </div>
+        <br>
+        <a class="nav-link text-center">
+            <button class="btn btn-danger me-lg-2 btn-lg" type="button" (click)="AdminTool('deluser')">Eliminar usuario</button>
+        </a>
+        <div class="container-fluid panel text-center" style="margin-top: 1%; min-width: 300px" id="deluser" hidden>
+            <br/>
+            <p class="titular">ingresa los datos del usuario:</p>
+            <form [formGroup]="formDelUser" (submit)="DelUser()">
+                <label for="delusermail">Email del usuario</label>
+                <br>
+                <input type="text" id="delusermail" style="width: 85%;" maxlength="50" formControlName="delusermail"/>
+                <br><br>
+                <input type="submit" class="btn btn-danger" value="Eliminar" id="delusersubmit" disabled [disabled]="formDelUser.invalid"/>
+                <br><br>
+                <p id="deluserresult" style="font-size: 1.2em;"></p>
+            </form>
+        </div>
+        <br/><br/><br/><br/><br/>
+    </div>
+</section>

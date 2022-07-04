@@ -1,0 +1,79 @@
+<article>
+    <section>
+        <div class="container">
+            <div class="d-flex justify-content-center p-5">
+                <div class="card bg-dark" style="width:30rem ;max-width: 30rem ; min-width: 300px;">
+                    <img id="profile_pic" src="/assets/imagenes/cjcorriendo.png" class="profile-pic align-self-center" alt="min-width:" (click)="ShowPhotoChange()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" id="pen_icon" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                        <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                    </svg>
+                    <div class="card-body">
+                        <a class="nav-link text-center" id="cambiarfoto" hidden>
+                            <button class="btn btn-danger me-lg-2 btn-lg" type="button" (click)="Tool('ChangePicture')">Cambiar Imagen de perfil</button>
+                        </a>
+                        <div class="container-fluid panel text-center" style="margin-top: 1%;" id="ChangePicture" hidden>
+                            <br/>
+                            <p style="text-align: center;">Aviso: se cerrará la sesión luego de realizar esta acción</p>
+                            <form [formGroup]="formulario_foto" (ngSubmit)="Enviar_foto()" novalidate>
+                                Ingrese Url
+                                <input type="text" class="titular" formControlName="ControlUrl">
+                                <button type="submit">enviar url</button >
+                            </form>
+                            <br>
+                        </div>
+                        <h1 id="nombre" class="d-flex justify-content-center">Nombre de usuario</h1>
+                        <h2 id="email" class="d-flex justify-content-center">Email</h2>
+                        <h2 id="peso" class="d-flex justify-content-center">Peso(kg)</h2>
+                        <h2 id="objetivo" class="d-flex justify-content-center">Objetivo: -</h2>
+                        <br>
+                        <div class="d-flex justify-content-center">
+                            <input type="button" class="btn btn-outline-danger" (click)="CerrarSesion()" value="Cerrar Sesión"/>
+                        </div>
+                        
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="galeria" class="container ">
+        <div class="text-center pt-5">
+            <h1>Últimas rutinas realizadas</h1>
+            <p>Aquí se almacenarán todas las rutinas que realices, utiliza los filtros para hallar la que buscas con mayor facilidad</p>
+        </div>
+
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Orden
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item">Más recientes primero</a></li>
+            <li><a class="dropdown-item">Más antiguas primero</a></li>
+            </ul>
+        </div>
+
+        <div class="container">
+              
+            <div class="row g-0">
+              <div class="col-sm-6 col-md-4 d-flex justify-content-center"><img class="m-2" src="/assets/imagenes/cjcorriendo.png" style="min-height: 150px; width:170px; max-width: 170px;"></div>
+              <div class="col-sm-6 col-md-4 d-flex justify-content-center"><img class="m-2" src="/assets/imagenes/cjhaciendopesas.png" style="min-height: 150px; width:170px; max-width: 170px;"></div>
+              <div class="col-sm-6 col-md-4 d-flex justify-content-center"><img class="m-2" src="/assets/imagenes/cjmancuernas.png" style="min-height: 150px; width:170px; max-width: 170px;"></div>
+              <div class="col-sm-6 col-md-4 d-flex justify-content-center"><img class="m-2" src="/assets/imagenes/cjcorriendo.png" style="min-height: 150px; width:170px; max-width: 170px;"></div>
+              <div class="col-sm-6 col-md-4 d-flex justify-content-center"><img class="m-2" src="/assets/imagenes/cjhaciendopesas.png" style="min-height: 150px; width:170px; max-width: 170px;"></div>
+              <div class="col-sm-6 col-md-4 d-flex justify-content-center"><img class="m-2" src="/assets/imagenes/cjmancuernas.png" style="min-height: 150px; width:170px; max-width: 170px;"></div>
+              <div class="col-sm-6 col-md-4 d-flex justify-content-center"><img class="m-2" src="/assets/imagenes/cjcorriendo.png" style="min-height: 150px; width:170px; max-width: 170px;"></div>
+              <div class="col-sm-6 col-md-4 d-flex justify-content-center"><img class="m-2" src="/assets/imagenes/cjhaciendopesas.png" style="min-height: 150px; width:170px; max-width: 170px;"></div>
+              <div class="col-sm-6 col-md-4 d-flex justify-content-center"><img class="m-2" src="/assets/imagenes/cjmancuernas.png" style="min-height: 150px; width:170px; max-width: 170px;"></div>
+              <div class="col-sm-6 col-md-4 d-flex justify-content-center"><img class="m-2" src="/assets/imagenes/cjcorriendo.png" style="min-height: 150px; width:170px; max-width: 170px;"></div>
+              <div class="col-sm-6 col-md-4 d-flex justify-content-center"><img class="m-2" src="/assets/imagenes/cjhaciendopesas.png" style="min-height: 150px; width:170px; max-width: 170px;"></div>
+              <div class="col-sm-6 col-md-4 d-flex justify-content-center"><img class="m-2" src="/assets/imagenes/cjmancuernas.png" style="min-height: 150px; width:170px; max-width: 170px;"></div>
+              <div class="col-sm-6 col-md-4 d-flex justify-content-center"><img class="m-2" src="/assets/imagenes/cjcorriendo.png" style="min-height: 150px; width:170px; max-width: 170px;"></div>
+              <div class="col-sm-6 col-md-4 d-flex justify-content-center"><img class="m-2" src="/assets/imagenes/cjhaciendopesas.png" style="min-height: 150px; width:170px; max-width: 170px;"></div>
+              <div class="col-sm-6 col-md-4 d-flex justify-content-center"><img class="m-2" src="/assets/imagenes/cjmancuernas.png" style="min-height: 150px; width:170px; max-width: 170px;"></div>
+            </div>
+          
+        </div>
+
+    </section>
+</article>

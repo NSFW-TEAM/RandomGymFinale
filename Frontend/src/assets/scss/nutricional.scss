@@ -1,0 +1,241 @@
+@import 'variables';
+
+section{
+    background: {
+        color: transparent;
+        image: url('/assets/imagenes/rockbg.jpg');
+        position: center;
+        size: cover;
+        repeat: no-repeat;
+    }
+    font-family: $bigfont;
+}
+
+#titulo{
+    text-align: center;
+    color: white;
+    font-size: 4.2em;
+    -webkit-text-stroke: 1.7px black;
+}
+
+.pregunta{
+    margin-bottom: 0.5%;
+    text-align: center;
+    color: white;
+    font-size: 2.4em;
+    -webkit-text-stroke: black 1px;
+}
+
+.selection{
+    text-align: center;
+    background-color: $bgcolorpage;
+    list-style-type: none;
+    border: 10px ridge $bgcolorpage;
+    width: 20%;
+    margin: {
+        left: auto;
+        right: auto;
+    }
+    li{
+        margin: {
+            top: 7%;
+            bottom: 7%;
+        }
+    }
+    input{
+        display: block;
+        margin : 0 auto;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    label{
+        color: white;
+        font-family: $smallfont;
+    }
+    label[for="peso"],[for="altura"]{
+        font-size: 1.4em;
+    }
+    input[type="number"]{
+        border-radius: 20px;
+        font: {
+            size: 1.3em;
+            family: $smallfont;
+        }
+        text-align: center;
+        width: 40%;
+    }
+    input[type="submit"]{
+        margin: {
+            top: 50px;
+            bottom: 10px;
+            
+        }
+        opacity: 0.01;
+        z-index: 1;
+    }
+    label[for="calcimc"]{
+        background-color: red;
+        user-select: none;
+        padding: 3%;
+        border: {
+            width: 3px;
+            style: solid;
+            color: black;
+            radius: 50px;
+        }
+        cursor: pointer;
+        text-align: center;
+        z-index: 2;
+        font-size: 1em;
+        &:hover{
+            background: white;
+            color: black;
+            border-color: black;
+        }
+        position: relative;
+        top: -26px;
+    }
+}
+
+#imgimc{
+    border: 10px ridge $bgcolorpage;
+    display: block;
+    margin: {
+        left: auto;
+        right: auto;
+    }
+}
+
+.resultado{
+    color: white;
+    text-align: center;
+    background-color: $bgcolorpage;
+    list-style-type: none;
+    border: 10px ridge $bgcolorpage;
+    width: 40%;
+    margin: {
+        left: auto;
+        right: auto;
+        bottom: 3%;
+    }
+    padding: {
+        top: 1%;
+        bottom: 1%;
+    }
+    input{
+        display: block;
+        margin: {
+            top: 50px;
+            bottom: 10px;
+            left: auto;
+            right: auto;
+        }
+        opacity: 0.01;
+        z-index: 1;
+    }
+    label[for="quedebo"]{
+        background-color: red;
+        user-select: none;
+        padding: 3%;
+        border: {
+            width: 3px;
+            style: solid;
+            color: black;
+            radius: 50px;
+        }
+        cursor: pointer;
+        text-align: center;
+        z-index: 2;
+        font: {
+            family: $smallfont;
+            size: 1em;
+        }
+        &:hover{
+            background: white;
+            color: black;
+            border-color: black;
+        }
+        position: relative;
+        top: -26px;
+    }
+}
+
+.textresultado{
+    font-size: 2em;
+}
+
+.dietas{
+    li{
+        background-image: url('/assets/imagenes/rockbg.jpg');
+        width: 95%;
+        height: 400px;
+        margin: {
+            top: 2%;
+            bottom: 2%;
+            left: auto;
+            right: auto;
+        }
+        border: {
+            width: 6px;
+            style: solid;
+            color: rgb(15,15,15);
+            radius: 50px;
+        }
+        div{
+            border-radius: 50px 50px 0 0;
+            background: {
+                image: url('../imagenes/redpattern.jpg');
+                color: transparent;
+            }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h1{
+                color: white;
+                font-size: 3em;
+                user-select: none;
+            }
+            padding: {
+                top: 1%;
+                bottom: 1%;
+            }
+        }
+        hr{
+            margin: 0;
+            height: 0;
+            border: {
+                top-color: black;
+                top-style: solid;
+                width: 0;
+                top-width: 10px;
+            }
+        }
+        p{
+            text-align: center;
+            line-height: 1.5em;
+            width: 95%;
+            margin: {
+                left: auto;
+                right: auto;
+            }
+            color: white;
+            font-size: 2em;
+            font-family: $smallfont;
+        }
+    }
+}
+
+footer{
+    font: {
+        family: $smallfont;
+        size: 1em;
+    }
+    padding: {
+        top: 10px;
+        bottom: 10px;
+    }
+    color: white;
+}

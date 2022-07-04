@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@1,600&display=swap");
+section {
+  background-color: transparent;
+  background-image: url("/assets/imagenes/rockbg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Bebas Neue", cursive;
+}
+
+#titulo {
+  text-align: center;
+  color: white;
+  font-size: 4.2em;
+  -webkit-text-stroke: 1.7px black;
+}
+
+.pregunta {
+  margin-bottom: 0.5%;
+  text-align: center;
+  color: white;
+  font-size: 2.4em;
+  -webkit-text-stroke: black 1px;
+}
+
+.selection {
+  text-align: center;
+  background-color: #141414;
+  list-style-type: none;
+  border: 10px ridge #141414;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.selection li {
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+
+.selection input {
+  display: block;
+  margin: 0 auto;
+}
+
+.selection input::-webkit-outer-spin-button,
+.selection input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.selection label {
+  color: white;
+  font-family: "Anybody", cursive;
+}
+
+.selection label[for="peso"], .selection [for="altura"] {
+  font-size: 1.4em;
+}
+
+.selection input[type="number"] {
+  border-radius: 20px;
+  font-size: 1.3em;
+  font-family: "Anybody", cursive;
+  text-align: center;
+  width: 40%;
+}
+
+.selection input[type="submit"] {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  opacity: 0.01;
+  z-index: 1;
+}
+
+.selection label[for="calcimc"] {
+  background-color: red;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 3%;
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  z-index: 2;
+  font-size: 1em;
+  position: relative;
+  top: -26px;
+}
+
+.selection label[for="calcimc"]:hover {
+  background: white;
+  color: black;
+  border-color: black;
+}
+
+#imgimc {
+  border: 10px ridge #141414;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resultado {
+  color: white;
+  text-align: center;
+  background-color: #141414;
+  list-style-type: none;
+  border: 10px ridge #141414;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.resultado input {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.01;
+  z-index: 1;
+}
+
+.resultado label[for="quedebo"] {
+  background-color: red;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 3%;
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  z-index: 2;
+  font-family: "Anybody", cursive;
+  font-size: 1em;
+  position: relative;
+  top: -26px;
+}
+
+.resultado label[for="quedebo"]:hover {
+  background: white;
+  color: black;
+  border-color: black;
+}
+
+.textresultado {
+  font-size: 2em;
+}
+
+.dietas li {
+  background-image: url("/assets/imagenes/rockbg.jpg");
+  width: 95%;
+  height: 400px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #0f0f0f;
+  border-radius: 50px;
+}
+
+.dietas li div {
+  border-radius: 50px 50px 0 0;
+  background-image: url("../imagenes/redpattern.jpg");
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.dietas li div h1 {
+  color: white;
+  font-size: 3em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.dietas li hr {
+  margin: 0;
+  height: 0;
+  border-top-color: black;
+  border-top-style: solid;
+  border-width: 0;
+  border-top-width: 10px;
+}
+
+.dietas li p {
+  text-align: center;
+  line-height: 1.5em;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 2em;
+  font-family: "Anybody", cursive;
+}
+
+footer {
+  font-family: "Anybody", cursive;
+  font-size: 1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+/*# sourceMappingURL=nutricional.css.map */
